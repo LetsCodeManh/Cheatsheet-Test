@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basic Tags</title>
+
+    <link rel="stylesheet" href="./resources/css/index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header + Navigations -->
+    <header class="text-align-center margin-top-75">
+      <h1 class="page-title">HTML Basic Tags</h1>
+      <p class="subtitle">Common Use</p>
+      <div class="section-tags margin-top-20">
+        <ul>
+          <li><a class="box" href="#head-section">Head Tags</a></li>
+          <li><a class="box" href="#main-section">Main</a></li>
+          <li><a class="box" href="#footer-section">Footer</a></li>
+          <li><a class="box" href="#footer-section">Something</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="line big"></div>
+
+    <!-- Main Section Start -->
+    <main>
+      <!-- Head Section -->
+      <section id="head-section">
+        <div class="text-align-center">
+          <h2 class="section-title">Head Tags</h2>
+          <p class="subtitle">Common Use</p>
+
+          <div class="section-tags margin-top-20">
+            <ul>
+              <li><a class="box" href="#head">&lt;head&gt;</a></li>
+              <li><a class="box" href="#meta">&lt;meta&gt;</a></li>
+              <li><a class="box" href="#title">&lt;title&gt;</a></li>
+              <li><a class="box" href="#link">&lt;link&gt;</a></li>
+              <li><a class="box" href="#script">&lt;script&gt;</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="line small"></div>
+
+        <!-- Head - The Document Metadata -->
+        <div class="container margin-top-40" id="head">
+          <div class="tag-code">
+            <h3 class="tag-name">The Document Metadata (Header)</h3>
+            <a class="box" href="#">&lt;head&gt;</a>
+            <a class="box" href="#">&lt;/head&gt;</a>
+          </div>
+
+          <article class="tag-article margin-top-10">
+            <p>
+              The <span class="box-span">&lt;head&gt;</span> HTML element
+              contains machine-readable information (metadata) about the
+              document, like its title, scripts, and style sheets.
+            </p>
+          </article>
+
+          <p class="more-info margin-top-10">
+            More information about this topic
+            <a
+              class="box"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+              target="_blank"
+              >HERE!</a
+            >
+          </p>
+
+          <aside class="tag-aside margin-top-10">
+            <p>
+              <span class="bold">Note:</span>
+              <span class="box-span">&lt;head&gt;</span> primarily holds
+              information for machine processing, not human-readability.
+            </p>
+          </aside>
+        </div>
+
+        <div class="line smaller"></div>
+
+        <!-- Meta - The Metadata -->
+        <div class="container margin-top-50" id="meta">
+          <div class="tag-code">
+            <h3 class="tag-name">The Metadata</h3>
+            <a class="box" href="#">&lt;meta/&gt;</a>
+          </div>
+
+          <article class="tag-article margin-top-10">
+            <p>
+              The <span class="box-span">&lt;meta&gt;</span> HTML element
+              represents metadata that cannot be represented by other HTML
+              meta-related elements, like
+              <span class="box-span">&lt;base&gt;</span>,
+              <span class="box-span">&lt;link&gt;</span>,
+              <span class="box-span">&lt;script&gt;</span>,
+              <span class="box-span">&lt;style&gt;</span> or
+              <span class="box-span">&lt;title&gt;</span>.
+            </p>
+          </article>
+
+          <p class="more-info margin-top-10">
+            More information about this topic
+            <a
+              class="box"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attributes"
+              target="_blank"
+              >HERE!</a
+            >
+          </p>
+
+          <h3 class="tag-name margin-top-50">The Metadata Attributes</h3>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#content" id="charset">charset</a>
+            <p class="attribute-text">
+              This attribute declares the document's character encoding. The
+              value must be "UTF-8", because UTF-8 is only valid encoding for
+              HTML5 documents.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#http" id="content">content</a>
+            <p class="attribute-text">
+              This attribute contains the value for the http-equiv or name
+              attribute, depending on whcih is used.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#name-att" id="http">http-equiv</a>
+            <p class="attribute-text">
+              Defines a pragma directive. The attribute is named
+              http-equiv(alent) because all the allowed values are names of
+              particular HTTP headers:
+            </p>
+            <ul class="list-styling margin-top-20">
+              <li><span class="box-span">content-security-policy</span></li>
+              <li><span class="box-span">content-type</span></li>
+              <li><span class="box-span">default-style</span></li>
+              <li><span class="box-span">x-ua-compatible</span></li>
+              <li><span class="box-span">refresh</span></li>
+            </ul>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#charset" id="name-att">name</a>
+            <p class="attribute-text">
+              The name and content attributes can be used together to provide
+              document metadata in terms of name-value pairs, with the name
+              attribute giving the metadata name, and the content attribute
+              giving the value.
+            </p>
+          </article>
+
+          <aside class="tag-aside">
+            <p>
+              <span class="bold">Note:</span> the attribute
+              <span class="box-span">name</span> has a specific meaning for the
+              <span class="box-span">&lt;meta&gt;</span> element, and the
+              <span class="box-span">itemprop</span> attribute must not be set
+              on the same <span class="box-span">&lt;meta&gt;</span> element
+              that has any existing <span class="box-span">name</span>,
+              <span class="box-span">http-equiv</span> or
+              <span class="box-span">charset</span> attributes
+            </p>
+          </aside>
+        </div>
+
+        <div class="line smaller"></div>
+
+        <!-- Title -->
+        <div class="container margin-top-40" id="title">
+          <div class="tag-code">
+            <h3 class="tag-name">The Document Title</h3>
+            <a class="box" href="#">&lt;title&gt;</a>
+            <a class="box" href="#">&lt;/title&gt;</a>
+          </div>
+
+          <article class="tag-article margin-top-10">
+            <p>
+              The <span class="box-span">&lt;title&gt;</span> HTML element
+              defines the document's title that is shown in a brower's title bar
+              or a page's tab. It only containes text; tags within the element
+              are ignored.
+            </p>
+          </article>
+
+          <p class="more-info margin-top-10">
+            More information about this topic
+            <a
+              class="box"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"
+              target="_blank"
+              >HERE!</a
+            >
+          </p>
+
+          <aside class="tag-aside">
+            <p>
+              <span class="bold">Note:</span> Presently, dynamically updating a
+              page's title will not be automatically announced by screen
+              readers. If you are going to update the page title to reflect
+              significant changes to a page's state, then the use of
+              <span class="box-span">ARIA Live Regions</span> may be necessary,
+              as well.
+            </p>
+          </aside>
+        </div>
+
+        <div class="line smaller"></div>
+
+        <!-- Link -->
+        <div class="container margin-top-40" id="link">
+          <div class="tag-code">
+            <h3 class="tag-name">The External Resource Link</h3>
+            <a class="box" href="#">&lt;link&gt;</a>
+          </div>
+
+          <article class="tag-article margin-top-10">
+            <p>
+              The <span class="box-span">&lt;link&gt;</span> HTML element
+              specifies relationships between the current document and an
+              external resource. This element is most commonly used to link to
+              stylesheets, but it also used to establish site icons (both
+              "favicon" style icons and icons for the home scren and apps on
+              mobile devices) among other things.
+            </p>
+          </article>
+
+          <p class="more-info margin-top-10">
+            More information about this topic
+            <a
+              class="box"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+              target="_blank"
+              >HERE!</a
+            >
+          </p>
+
+          <h3 class="tag-name margin-top-50">The Link Attributes</h3>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#crossorigin" id="as">as</a>
+            <p class="attribute-text">
+              This attribute is only used when
+              <span class="box-span">rel="preload</span> or
+              <span class="box-span">rel="prefetch</span> has been set on the
+              <span class="box-span">&lt;link&gt;</span>, which is necessary for
+              request matching, application of correct content security policy,
+              and setting of correct
+              <span class="box-span">Accept</span> request header. Furthermore,
+              <span class="box-span">rel="preload</span> uses this as a signal
+              for request prioritization. The table below lists the valid values
+              for this attribute and the elements or resources they apply to.
+            </p>
+
+            <table class="margin-top-20">
+              <thead>
+                <tr>
+                  <th class="table-value">Value</th>
+                  <th class="table-description">Applies To</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>audio</td>
+                  <td><span class="box-span">&lt;audio&gt;</span> elements</td>
+                </tr>
+                <tr>
+                  <td>document</td>
+                  <td>
+                    <span class="box-span">&lt;iframe&gt;</span> and
+                    <span class="box-span">&lt;frame&gt;</span> elements
+                  </td>
+                </tr>
+                <tr>
+                  <td>embed</td>
+                  <td><span class="box-span">&lt;embed&gt;</span> elements</td>
+                </tr>
+                <tr>
+                  <td>fetch</td>
+                  <td>
+                    fetch, XHR elements
+                    <aside class="tag-aside margin-top-10">
+                      <p>
+                        <span class="bold">Note:</span> This value also requires
+                        <span class="box-span">&lt;link&gt;</span> to contain
+                        the crossorigin attribute.
+                      </p>
+                    </aside>
+                  </td>
+                </tr>
+                <tr>
+                  <td>font</td>
+                  <td>CSS @font-face</td>
+                </tr>
+                <tr>
+                  <td>image</td>
+                  <td>
+                    <span class="box-span">&lt;img&gt;</span> and
+                    <span class="box-span">&lt;picture&gt;</span> elements with
+                    srcset or imageset attributes, SVG
+                    <span class="box-span">&lt;image&gt;</span> elements, CSS
+                    <span class="box-span">*-image</span> rules
+                  </td>
+                </tr>
+                <tr>
+                  <td>object</td>
+                  <td><span class="box-span">&lt;object&gt;</span> elements</td>
+                </tr>
+                <tr>
+                  <td>script</td>
+                  <td>
+                    <span class="box-span">&lt;script&gt;</span> elements,
+                    Worker <span class="box-span">importScripts</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>style</td>
+                  <td>
+                    <span class="box-span">&lt;link rel=stylesheet&gt;</span>
+                    elements, CSS @import
+                  </td>
+                </tr>
+                <tr>
+                  <td>track</td>
+                  <td><span class="box-span">&lt;track&gt;</span> elements</td>
+                </tr>
+                <tr>
+                  <td>video</td>
+                  <td><span class="box-span">&lt;video&gt;</span> elements</td>
+                </tr>
+                <tr>
+                  <td>worker</td>
+                  <td>Worker, SharedWorker</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#disabled" id="crossorigin"
+              >crossorigin</a
+            >
+            <p class="attribute-text">
+              This enumerated attribute indicates whether CORS must be used when
+              fetching the resource. CORS-enabled images can be resused in the
+              <span class="box-span">&lt;canvas&gt;</span> element without being
+              tainted. The allowed values are:
+            </p>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">anonymous</span>
+              <p class="attribute-value-text margin-top-10">
+                A cross-origin request (i.e. with an
+                <span class="box-span">Origin</span> HTTP header) is performed,
+                but no credential is sent (i.e. no cookie, X.509 certificate, or
+                HTTP Basic authentication). If the server does not give
+                credentials to the origin site (by not setting the
+                <span class="box-span">Access-Control-Allow-Origin</span> HTTP
+                header) the resource will be tainted and its usage restricted.
+              </p>
+            </div>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">use-credentials</span>
+              <p class="attribute-value-text margin-top-10">
+                A cross-origin request (i.e. with an
+                <span class="box-span">Origin</span> HTTP header) is performed
+                along with a credential sent (i.e. a cookie, certificate, and
+                and/or HTTP Basic authentication is performed). If the server
+                does not give credentials to the origin site (through
+                <span class="box-span">Access-Control-Allow-Credentials</span>
+                HTTP header), the resource will be tainted and its usage
+                restricted.
+              </p>
+            </div>
+
+            <p class="attribute-text margin-top-20">
+              If the attribute is not present, the resource is fetched without a
+              CORS request (i.e. without sending the
+              <span class="box-span">Origin</span> HTTP header), preventing its
+              non-tainted usage. If invalid, it is handled as if the enumerated
+              keyword <span class="bold">anonymous</span> was used. See CORS
+              settings attributes for additional information.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#fetchpriority" id="disabled"
+              >disabled</a
+            >
+            <p class="attribute-text">
+              For <span class="box-span">rel="stylesheet"</span> only, the
+              <span class="box-span">disabled</span> Boolean attribute indicates
+              whether or not the described stylesheet should be loaded and
+              applied to the document. If
+              <span class="box-span">disabled</span> is specified in the HTML
+              when it is loaded, the stylesheet will not be loaded during page
+              load. Instead , the stylesheet will be loaded on-demand, if and
+              when the <span class="box-span">disabled</span> attribute is
+              changed to <span class="box-span">false</span> or removed.
+            </p>
+
+            <p class="attribute-text">
+              Setting the <span class="box-span">disabled</span> property in the
+              DOM causes the stylesheet to be removed from the document's
+              <span class="box-span">Document.styleSheets</span> list.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#href" id="fetchpriority"
+              >fetchpriority</a
+            >
+            <p class="attribute-text">
+              Provides a hint of the relative priority to use when fetching a
+              preloaded resource. Allowed values:
+            </p>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">high</span>
+              <p class="attribute-value-text margin-top-10">
+                Signals a high-priority fetch relative to other resources of the
+                same type.
+              </p>
+            </div>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">low</span>
+              <p class="attribute-value-text margin-top-10">
+                Signals a low-priority fetch relative to other resources of the
+                same type.
+              </p>
+            </div>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">auto</span>
+              <p class="attribute-value-text margin-top-10">
+                Default: Signals automatic determination of fetch priority
+                relative to other resources of the same type.
+              </p>
+            </div>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#hreflang" id="href">href</a>
+            <p class="attribute-text">
+              This attribute specifies the URL of the linked resource. A URL can
+              be absolute or relative.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#imagesizes" id="hreflang"
+              >hreflang</a
+            >
+            <p class="attribute-text">
+              This attribute indicates the language of the linked resource. It
+              is purely advisory. Allowed values are specified by RFC 5646: Tags
+              for Identifying Languages (also known as BCP 47) Use this
+              attribute only if the <span class="box-span">href</span> attribute
+              is present.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#imagesrcset" id="imagesizes"
+              >imagesizes</a
+            >
+            <p class="attribute-text">
+              For <span class="box-span">rel="preload</span> and
+              <span class="box-span">as="image</span> only, the
+              <span class="box-span">imagesizes</span> attribute is a sizes
+              attribute that indicates to preload the appropriate resource used
+              by an <span class="box-span">img</span> element with corresponding
+              values for its <span class="box-span">srcset</span> and
+              <span class="box-span">sizes</span> attributes.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#integrity" id="imagesrcset"
+              >imagesrcset</a
+            >
+            <p class="attribute-text">
+              For <span class="box-span">rel="preload</span> and
+              <span class="box-span">as="image</span> only, the
+              <span class="box-span">imagesrcset</span> attribute is a sourceset
+              attribute that indicates to preload the appropriate resource used
+              by an <span class="box-span">img</span> element with corresponding
+              values for its <span class="box-span">srcset</span> and
+              <span class="box-span">sizes</span> attributes.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#media" id="integrity">integrity</a>
+            <p class="attribute-text">
+              Contains inline metadata &#8212; a base64-encoded cryptographic
+              hash of the resource (file) you're tellling the browser to fetch.
+              The browser can use this to verify that the fetched resource has
+              been delivered free of unexpected manipulaiton. See Subresource
+              Integrity.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#prefetch" id="media">media</a>
+            <p class="attribute-text">
+              This attribute specifies the media that the linked resource
+              applies to. Its value must be a media type / media query. This
+              attribute is mainly useful when linking to external stylesheets
+              &#8212; it allows the user agent to pick the best adapted one for
+              the device it runs on.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#referrerpolicy" id="prefetch"
+              >prefetch</a
+            >
+            <p class="attribute-text">
+              Identiffies a resource that might be required by the next
+              navigation and that the user agent should retrieve it. This allows
+              the user agent to repsond faster when the resource is requested in
+              the future.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#rel" id="referrerpolicy"
+              >referrerpolicy</a
+            >
+            <p class="attribute-text">
+              A string indicating which referrer to use when fetching the
+              resource:
+            </p>
+            <ul class="list-styling margin-top-20">
+              <li>
+                <span class="box-span">no-referrer</span> means that the
+                <span class="box-span">Referer</span> header will not be sent.
+              </li>
+              <li>
+                <span class="box-span">no-referrer-when-downgrade</span> means
+                that no <span class="box-span">Referer</span> header will be
+                sent when navigating to an origin without TLS (HTTPS). this is a
+                user agent's default behavior, if no policy is otherwise
+                specified.
+              </li>
+              <li>
+                <span class="box-span">origin</span> means htat the referrer
+                will be the origin of the page, which is roughly the scheme, the
+                host, and the port.
+              </li>
+              <li>
+                <span class="box-span">origin-when-cross-origin</span> means
+                that navigating to other origins will be limited to the scheme,
+                the host, and the port, while navigating on the same origin will
+                include the referrer's path.
+              </li>
+              <li>
+                <span class="box-span">unsafe-url</span> means that the referrer
+                will include the origin and the path (but not the fragment,
+                password, or username). This case is unsafe because it can leak
+                origins and paths from TLS-protected resources to insecure
+                origins.
+              </li>
+            </ul>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#sizes" id="rel">rel</a>
+            <p class="attribute-text">
+              This attribute names a relationship of the linked document to the
+              current document. The attribute must be a space-separated list of
+              link type values.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#title-att" id="sizes">sizes</a>
+            <p class="attribute-text margin">
+              This attribute defines the sizes of the icons for visual media
+              contained in the resource. It must be present only if the
+              <span class="box-span">rel</span> contains a value of
+              <span class="box-span">icon</span> or a non-standard type such as
+              Apple's <span class="box-span">apple-touch-icon</span>. It may
+              have the following values:
+            </p>
+            <ul class="list-styling margin-top-20">
+              <li>
+                <span class="box-span">any</span>, meaning that the icon can be
+                scaled to any sizes as it is in a vector format, like
+                <span class="box-span">image/svg+xml</span>.
+              </li>
+              <li>
+                a white-space separated list of sizes, each in the format
+                <span class="box-span"
+                  >&lt;width in pixel&gt;x&lt;height in pixels&gt;</span
+                >
+                or
+                <span class="box-span"
+                  >&lt;width in pixel&gt;X&lt;height in pixels&gt;</span
+                >. Each of these sizes must be contained in the resource.
+              </li>
+            </ul>
+          </article>
+
+          <aside class="tag-aside">
+            <p>
+              <span class="bold">Note:</span> Most icon formates are only able
+              to sore one single icon; therefore most of the time the
+              <span class="box-span">sizes</span> attribute contains only one
+              entry. MS's ICO format does, as well as Apple's ICNS. ICO is more
+              ubiquitous, so you should use this format if corss-browser support
+              is a concern (especially for odl IE versions).
+            </p>
+          </aside>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#type" id="title-att">title</a>
+            <p class="attribute-text">
+              The <span class="box-span">title</span> attribute has special
+              semantics on the
+              <span class="box-span">&lt;link&gt;</span> element. When used on a
+              <span class="box-span">&lt;link rel="stylesheet"&gt;</span> it
+              defines a default or an alternate stylesheet.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#as" id="type">type</a>
+            <p class="attribute-text">
+              This attribute is used to define the type of the content linked
+              to. The value of the attribute should be a MIME type such as
+              <span class="bold">text/html</span>,
+              <span class="bold">text/css</span>, and so on. The common use of
+              this attribute is to define the type of stylesheet being
+              referenced (such as <span class="bold">text/css</span>, but given
+              that CSS is the only stylesheet language used on the web, not only
+              is it possible to omit the
+              <span class="box-span">type</span> attribute, but is actually now
+              recommended practice. It is also used on
+              <span class="box-span">rel="preload</span> link types, to make
+              sure the browser only downloads file types that it supports.
+            </p>
+          </article>
+
+          <aside class="tag-aside">
+            <p>
+              <span class="bold">Note:</span> The
+              <span class="box-span">load</span> event fires once the stylesheet
+              and all of its imported content has been loaded and parsed, and
+              immediately before the styles start being applied to the content.
+            </p>
+          </aside>
+        </div>
+
+        <div class="line smaller"></div>
+
+        <!-- Script -->
+        <div class="container margin-top-40" id="script">
+          <div class="tag-code">
+            <h3 class="tag-name">The Script</h3>
+            <a class="box" href="#">&lt;script&gt;</a>
+            <a class="box" href="#">&lt;/script&gt;</a>
+          </div>
+
+          <article class="tag-article margin-top-10">
+            <p>
+              The <span class="box-span">&lt;script&gt;</span> HTML element is
+              usde to embed executable code or data; this is typically used to
+              embed or refer to JavaScript code. The
+              <span class="box-span">&lt;script&gt;</span> element can also be
+              used with other languages, such as WebGL's GLSL shader programming
+              language and JSON
+            </p>
+          </article>
+
+          <p class="more-info margin-top-10">
+            More information about this topic
+            <a
+              class="box"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script"
+              target="_blank"
+              >HERE!</a
+            >
+          </p>
+
+          <h3 class="tag-name margin-top-50">The Script Attributes</h3>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#crossorigin-script"
+              id="async-script"
+              >async</a
+            >
+            <p class="attribute-text">
+              For classic scripts, if the
+              <span class="box-span">async</span> attribute is present, then the
+              classis script will be fetched in parallel to parsing and
+              evaluated as soon as it is available.
+            </p>
+
+            <p class="attribute-text">
+              For module scripts, if the
+              <span class="box-span">async</span> attribute is present then the
+              scripts and all their dependencies will be exucuted in the defer
+              queue, therefore they will get fetched in parallel to parsing and
+              evaluated as soon as it is available.
+            </p>
+
+            <p class="attribute-text">
+              This attribute allows the elimination of
+              <span class="bold">parset-blocking JavaScript</span> where the
+              browser would have to load and evaluate scripts before continuing
+              to parse. <span class="box-span">defer</span> has a similar effect
+              in this case.
+            </p>
+
+            <p class="attribute-text">
+              This is a boolean attribute: the presence of a boolean attribute
+              on an ement represents the true value, and the absence of the
+              attribute represents the false value.
+            </p>
+
+            <p class="attribute-text">
+              See Browser compatibility for notes on browser support. See also
+              Async scripts for asm.js
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#defer-script"
+              id="crossorigin-script"
+              >crossorigin</a
+            >
+            <p class="attribute-text">
+              Normal <span class="box-span">script</span> elements pass minimal
+              informaiton to the
+              <span class="box-span">window.onerror</span> for scripts which do
+              not pass the standard CORS checks. To allow error logging for
+              sites which use a seoarate domain for static media, use this
+              attribute. See CORS setting attributes for a more descriptive
+              explanation of its valid arguments.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#fetchpriority-script"
+              id="defer-script"
+              >defer</a
+            >
+            <p class="attribute-text">
+              This Boolean attribute is set to indicate to a browser that the
+              script is meant to be executed after the document has been parsed,
+              but before firing <span class="box-span">DOMContentLoaded</span>.
+            </p>
+
+            <p class="attribute-text">
+              Scripts with the <span class="box-span">defer</span> attribute
+              will prevent the
+              <span class="box-span">DOMContentLoaded</span> event from firing
+              until the script has loaded and finished evaluating.
+            </p>
+
+            <aside class="tag-aside bg-red">
+              <p>
+                <span class="bold">Warning:</span> This attribute must not be
+                used if the <span class="box-span">src</span> attribute is
+                absent (i.e. for inline scripts), in this case it would have no
+                effect.
+              </p>
+
+              <p>
+                The <span class="box-span">defer</span> attribute has no effect
+                on module scripts &#8212; they defer by default.
+              </p>
+            </aside>
+
+            <p class="attribute-text">
+              Scripts with the <span class="box-span">defer</span> attribute
+              will execute in the order in which they appear in the document.
+            </p>
+
+            <p class="attribute-text">
+              This attribute allows the elimination of
+              <span class="bold">parser-blocking JavaScript</span> where the
+              browser would have to load and evaluate scripts before continuing
+              to parse. <span class="box-span">async</span> has a similar effect
+              in this case.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#integrity-script"
+              id="fetchpriority-script"
+              >fetchpriority</a
+            >
+            <p class="attribute-text">
+              Provides a hint of the relative priority to use when fetching an
+              external script. Allowed values:
+            </p>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">high</span>
+              <p class="attribute-value-text margin-top-10">
+                Signals a high-priority fetch relative to other external
+                scripts.
+              </p>
+            </div>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">low</span>
+              <p class="attribute-value-text margin-top-10">
+                Signals a low-priority fetch relative to other external scripts.
+              </p>
+            </div>
+
+            <div class="attribute-value margin-top-20">
+              <span class="attribute-value-name">auto</span>
+              <p class="attribute-value-text margin-top-10">
+                Default: Signals automatic determination of fetch priority
+                relative to other external scripts.
+              </p>
+            </div>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#nomodule-script"
+              id="integrity-script"
+              >integrity</a
+            >
+            <p class="attribute-text">
+              This attribute contains inline metadata that a user agent can use
+              to verify that a fetched resource has been delivered free of
+              unexpected manipulation. See Subresource Integrity.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#nonce-script" id="nomodule-script"
+              >nomodule</a
+            >
+            <p class="attribute-text">
+              This Boolean attribute is set to indicate that the script should
+              not be execute in browsers that support ES modules &#8212; in
+              effect, this can be used to serve fallback scripts to older
+              browsers that do not support modular JavaScript code.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#referrerpolicy-script"
+              id="nonce-script"
+              >nonce</a
+            >
+            <p class="attribute-text">
+              A cryptographic nonce (number used once) to allow scripts in a
+              script-src Content-Security-Policy. The server must generate a
+              unique nonce value each time it transmits a policy. It is critical
+              to provide a nonce that cannot be guessed as bypassing a
+              resource's policy is otherwise trivial.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a
+              class="attribute-name"
+              href="#src-script"
+              id="referrerpolicy-script"
+              >referrerpolicy</a
+            >
+            <p class="attribute-text">
+              Indicates which referrer to send when fetching the script, or
+              resources fetched by the script:
+            </p>
+            <ul class="list-styling margin-top-20">
+              <li>
+                <span class="box-span">no-referrer</span>: The
+                <span class="box-span">Referer</span> header will not be sent.
+              </li>
+              <li>
+                <span class="box-span">no-referrer-when-downgrade</span>: The
+                <span class="box-span">Referer</span> header will not be sent to
+                origins without TLS (HTTPS).
+              </li>
+              <li>
+                <span class="box-span">origin</span>: The sent referrer will be
+                limited to the origin of the referring page: its scheme, host,
+                and port.
+              </li>
+              <li>
+                <span class="box-span">origin-when-cross-origin</span>: The
+                referrer sent to other origins will be limited to the scheme,
+                the host, and the port. Navigations on the same origin will
+                still include the path.
+              </li>
+              <li>
+                <span class="box-span">same-origin</span>: A referrer will be
+                sent for same origin, but cross-origin requests will contain no
+                referrer information.
+              </li>
+              <li>
+                <span class="box-span">strict-origin</span>: Only send the
+                origin of the document as the referrer when the protocol
+                security level stays the sae (HTTPS -> HTTPS), but don't send it
+                to a less secure destination (HTTPS -> HTTP).
+              </li>
+              <li>
+                <span class="box-span">strict-origin-when-cross-origin</span>
+                (default): Send a full URL when performing a same-origin
+                request, only send the origin when the protocol security level
+                stays the same (HTTPS -> HTTPS), and send no header to a less
+                secure destination (HTTPS -> HTTP).
+              </li>
+              <li>
+                <span class="box-span">unsafe-url</span>: The referrer will
+                include the origin and the path (but not the fragment, password,
+                or username). <span class="bold">This value is unsafe</span>,
+                because it leaks origins and paths from TLS-protected resources
+                to insecure origins.
+              </li>
+            </ul>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#type-script" id="src-script"
+              >src</a
+            >
+            <p class="attribute-text">
+              This attribute specifies the URL of an external script; this can
+              be used as an alternative to embedding a script directly within a
+              documentl.
+            </p>
+          </article>
+
+          <article class="attribute-article margin-top-30">
+            <a class="attribute-name" href="#async-script" id="type-script"
+              >type</a
+            >
+            <p class="attribute-text">
+              This attribute indicates the type of script represented. The value
+              of this attribute will be in one of the following categories:
+            </p>
+
+            <ul class="list-styling margin-top-20">
+              <li>
+                <span class="bold">Omitted or a JavaScript MIME type:</span>
+                This indicates the script is JavaScript. The HTML specification
+                urges authors to omit the attribute rather than provide a
+                redundant MIME type. In ealier browsers, this identified the
+                scripting language of the embedded or imported (via the
+                <span class="box-span">src</span> attribute) code. JavaScript
+                MIME types are listed in the specification.
+              </li>
+              <li>
+                <span class="box-span">module:</span> Causes the code to be
+                treated as a JavaScript module. The processing of the script
+                contents is deferred. The
+                <span class="box-span">charset</span> and
+                <span class="box-span">defer</span> attributes have no effect.
+                For information on using <span class="box-span">module</span>,
+                see our JavaScript modules guide. Unlike classic scripts, module
+                scripts require the use of the CORS protocol for cross-origin
+                fetching.
+              </li>
+              <li>
+                <span class="bold">Any other value:</span> The embedded content
+                is treated as a data block which won't be processed by the
+                browser. Developers must use a valid MIME type that is not a
+                JavaScript MIME type to denote data blocks. The
+                <span class="box-span">src</span> attribute will be ignored.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="line big"></div>
+
+      <div id="main-section">
+        <p class="to-be-continuing">...To Be continuing...</p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
